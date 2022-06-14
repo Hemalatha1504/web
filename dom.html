@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List</title>
+    <script src="dom.js"></script>
+    <style>
+.btn {
+  background-color: gray;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.btn-two{
+  margin-left: 450px;
+}
+ul{
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+li{
+    position:relative;
+    display:block;
+    padding:10px 5px;
+    margin-bottom:10px;
+}
+.input-search{
+    margin-left: 450px;
+  text-align: center;
+  display: inline-block;
+  padding: 50px ;
+  margin: auto;
+}
+.input1{
+    width: 250px;
+    height:30px;
+    margin-top:80px;
+    margin-left: 150px;
+}
+    </style>
+</head>
+<body>
+    <div class="btn-two">
+       <button class="btn" onclick="add('Lemon Tea')">Add</button>
+       <button class="btn" onclick="removed()">Remove</button>
+       <button class="btn" onclick="replace('Black Forest Cake')">Replace</button>
+       <button class="btn" onclick="insert('Coffee')">InsertBefore</button>
+    </div>
+    <ul id="list">
+        <li id="t1">Tea</li>
+        <li id="t2">Coffee</li>
+        <li id="t4">Cold Coffee</li>
+    </ul>
+
+    <div class="input-search">
+        <input type="text" id="input1" class="input1">
+            <button class="btn" onclick="add1()">Add</button>
+            <button class="btn" onclick="removed1()">Remove</button>
+            <button class="btn" onclick="replace1()">Replace</button>
+            <button class="btn" onclick="insert1()">InsertBefore</button>
+    </div>
+    <ul id="list1">
+        <li id="v1">Red</li>
+        <li id="v2">Black</li>
+        <li id="v4">Blue</li>
+    </ul>
+</body>
+</html>
