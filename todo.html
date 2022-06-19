@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="dom1.js"></script>
+    <script src="test1.js"></script>
+    <style>
+    a:link, a:visited {
+        background-color:rgb(7, 180, 146);
+        color: white;
+        padding: 14px 25px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+    }
+
+    a:hover, a:active {
+        background-color:rgb(40, 114, 98);
+    }
+    .btn1{
+        text-align: center;
+        margin-top: 40px;
+    }
+    .container{
+        border: 2px solid black;
+        width: 80%;
+        height: 350px;
+        margin-left: 250px;
+        margin-top: 10px;
+        border: hidden;
+    }
+    .input-search{
+        margin-left: 200px;
+      
+    }
+    .input-search > label{
+        font-size: 20px;
+    }
+    .input1,.input2,.input{
+    width: 250px;
+    height:30px;
+    margin-top:35px;
+    margin-left: 150px;
+    }
+    .input3{
+        margin-top: -70px;
+    }
+    .gt{
+        margin-left: 190px;
+        margin-top: -20px;
+    }
+    .btn {
+    background-color:rgb(40, 114, 98);
+   /* background-color: rgb(35, 250, 64);
+    background-color: rgb(248, 29, 29);
+    background-color: rgb(236, 138, 45);  */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 45px 172px;
+    cursor: pointer;
+    }
+    .btn1{
+        border-top-left-radius: 15px;
+        border-top-right-radius: 20px;
+    }
+    .btn2{
+        border-top-left-radius: 20px;
+        background-color:rgb(40, 114, 98);
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 45px 172px;
+        cursor: pointer;
+        border-top-right-radius: 20px;
+    }
+     ul {
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        justify-content: space-around;
+        padding-left: 0;
+        margin-left: 0;
+    }
+     li{
+        position: relative;
+        font-size: 18px;
+        display: flex;
+        border: 2px solid gray;
+        border-radius: 6px;
+        width:550px;
+        height: 30px;
+        padding: 20px 90px;
+        margin-left: 50px;
+        margin-bottom: 20px;
+    }
+    li >p{
+        margin-left: 40px;
+        text-align: center;
+        margin-top: 0px;
+        
+    }
+    #all > .btn{
+        margin-left: 0px;
+        margin-top: 0px;
+       
+    }
+    #all{
+        border: 2px solid gray;
+        width: 800px;
+        height: auto;
+        margin-left: 280px;
+        box-shadow: 1px 8px 8px 8px gray;
+        margin-top: 20px;
+        border-radius: 15px;
+    }
+    header{
+        background-color: rgb(40, 114, 98);
+        border: 2px solid rgb(27, 109, 80);
+        width: 100%;
+        height: 150px;
+    }
+    header p{
+        
+        font-size: 40px;
+        font-weight: 600;
+        text-align: center;
+    }
+    #ol{
+        border: 1px solid rgb(40, 114, 98);
+        width: 800px;
+        margin-top: -46px;
+        
+    }
+    </style>
+</head>
+<body>
+   <header>
+    <p>To-do List</p>
+   </header>
+    <div class="container">
+        <div class="input-search">
+            <!--<form action="all.html" method="GET">-->
+            <label for="input1">Task:</label>
+            <input type="text" id="input1" class="input1" placeholder="Your Task Description" required><br>
+         <!--   <label for="input">Note:</label>
+            <input type="text" id="input" class="input" placeholder="Any Important Description"><br>
+           -->  <label for="input2">Date:</label>
+            <input type="date" id="input2" class="input2" placeholder="Date" autocomplete="off"required><br><br><br><br>
+          
+            <label for="input3">Category:</label>
+            <div class="gt">
+            <input type="radio" id="input3" name="input3" value="work">
+            <label for="work">Work</label>
+            <input type="radio" id="input3" name="input3" value="personal">
+            <label for="personal">Personal</label>
+            <input type="radio" id="input3" name="input3" value="birthday">
+            <label for="birthday">Birthday</label>
+            <br></div>
+            <button class="btn" onclick="add1()">Add</button>
+        </div>
+    </div>
+    <div id="all"> 
+       <button class="btn btn1">All</button>
+     <!--  <button class="btn btn2" onclick="addarray()">Work</button>-->
+     <a href="addw.html" class="btn btn2" >Work</a>
+       <div id="ol"></div>
+         <ul id="list1">
+           <!-- <input type="checkbox" id="vehicle1" name="vehicle1" value="check">-->
+           
+        
+         </ul>
+    </div>
+</body>
+</html>
