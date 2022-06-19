@@ -66,8 +66,15 @@ function add1(){
                 ul.style.textAlign="center";
                
                 }
-else if (node2=="personal"){ul.style.border="3px solid rgb(253, 119, 119)"}
-else{ul.style.border="3px solid rgb(243, 210, 61)"}
+else if (node2=="personal"){ul.style.border="3px solid rgb(253, 119, 119)";
+                           ul.style.width="600px";
+                ul.style.height="50px";
+                ul.style.marginLeft="60px";    
+                ul.style.textAlign="center";}
+else{ul.style.border="3px solid rgb(243, 210, 61)";ul.style.width="600px";
+                ul.style.height="50px";
+                ul.style.marginLeft="60px";    
+                ul.style.textAlign="center";}
     
   });
    
